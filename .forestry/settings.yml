@@ -24,11 +24,9 @@ sections:
 - type: document
   path: src/data/site/navigation.json
   label: Navigation
-  match: "**/*"
 - type: document
   path: src/data/site/social.json
   label: Social Links
-  match: "**/*"
 upload_dir: src/data/blog/images
 public_path: "/uploads"
 front_matter_path: ''

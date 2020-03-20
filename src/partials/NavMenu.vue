@@ -4,7 +4,7 @@
             class="px-2 py-1 uppercase text-xs font-semibold hover:text-gray-200"
             :to="nav.link"
             exact-active-class="text-gray-100"
-            v-for="(nav, i) in $static.metadata.navigation.header"
+            v-for="(nav, i) in $static.metadata.mainNavigation"
             :key="i"
             >{{ nav.name }}</g-link
         >
@@ -14,10 +14,9 @@
 <static-query>
 query {
     metadata {
-        navigation {
-            header {
-                name, link
-            }
+        mainNavigation {
+            name
+            link
         }
     }
 }

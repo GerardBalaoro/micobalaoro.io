@@ -4,16 +4,19 @@
 	>
 		<g-link
 			:to="post.path"
+			:title="post.title"
 			class="block bg-blue-100 h-40 md:h-48 lg:h-64 relative w-full"
 		>
 			<g-image
 				v-if="post.image"
 				class="absolute object-cover w-full h-full"
+				:alt="post.title"
 				:src="post.image"
 			/>
 			<g-image
 				v-else
 				class="absolute object-cover w-full h-full"
+				:alt="post.title"
 				src="~/assets/img/blog-placeholder.png"
 			/>
 		</g-link>

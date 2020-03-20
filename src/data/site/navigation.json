@@ -1,8 +1,6 @@
 {
-	"navigation": {
-		"header": [
-			{ "name": "Home", "link": "/" },
-			{ "name": "About", "link": "/about/" }
-		]
-	}
+	"mainNavigation": [
+		{ "name": "Home", "link": "/" },
+		{ "name": "About", "link": "/about/" }
+	]
 }

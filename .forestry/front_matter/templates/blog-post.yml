@@ -2,21 +2,28 @@
 label: Blog Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-- type: text
-  name: category
-  label: category
-- type: datetime
-  name: created
-  label: created
-- type: file
-  name: image
-  label: image
-- type: list
-  name: tags
-  label: tags
 - type: number
   name: id
   label: id
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: category
+  label: Category
+  default: Blog
+- type: datetime
+  name: created
+  label: Date Created
+  config:
+    date_format: YYYY-MM_DD
+  default: now
+- type: file
+  name: image
+  label: Image
+  description: Featured image for the post
+- type: list
+  name: tags
+  label: Tags
+  config:
+    use_select: false

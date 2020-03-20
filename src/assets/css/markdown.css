@@ -1,0 +1,41 @@
+.post .content {
+	& h2 {
+		@apply text-2xl font-semibold mb-2;
+		@screen lg {
+			@apply text-3xl;
+		}
+	}
+
+	& p {
+		@apply mt-2 mb-6 text-justify;
+		@screen lg {
+			@apply leading-loose tracking-wide text-lg;
+		}
+
+		& + h2,
+		& + h3 {
+			@apply mt-5;
+		}
+	}
+
+	& ul {
+		list-style: square;
+		& li {
+			@apply py-1;
+		}
+	}
+
+	& strong,
+	& b {
+		@apply font-bold;
+	}
+
+	& i,
+	& em {
+		@apply italic;
+	}
+
+	& a {
+		@apply text-blue-500;
+	}
+}

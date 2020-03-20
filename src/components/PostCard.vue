@@ -1,0 +1,57 @@
+<template>
+	<article
+		class="bg-white shadow-lg rounded overflow-hidden flex flex-col items-stretch h-full"
+	>
+		<g-link
+			:to="post.path"
+			class="block bg-blue-100 h-40 md:h-48 lg:h-64 relative w-full"
+		>
+			<g-image
+				v-if="post.image"
+				class="absolute object-cover w-full h-full"
+				:src="post.image"
+			/>
+			<g-image
+				v-else
+				class="absolute object-cover w-full h-full"
+				src="~/assets/img/blog-placeholder.png"
+			/>
+		</g-link>
+		<div class="pt-5 px-5 flex flex-col flex-grow">
+			<div
+				class="mr-auto text-xs px-2 py-1 font-semibold bg-blue-100 text-blue-500 rounded mb-2"
+			>
+				{{ post.category.title.toUpperCase() }}
+			</div>
+			<h1 class="font-semibold text-xl leading-tight w-full block">
+				<g-link :to="post.path">
+					{{ post.title }}
+				</g-link>
+			</h1>
+			<p class="mt-2 text-sm xl:mt-4 text-justify">
+				{{ excerpt }}
+			</p>
+		</div>
+		<div
+			class="text-right uppercase font-medium text-sm w-full text-gray-600 self-end p-5"
+		>
+			{{ post.created }}
+		</div>
+	</article>
+</template>
+
+<script>
+export default {
+	props: {
+		post: { type: Object, required: true }
+	},
+	computed: {
+		excerpt() {
+			return (
+				this.post.content.replace(/(<([^>]+)>)/gi, '').slice(0, 150) +
+				'...'
+			);
+		}
+	}
+};
+</script>

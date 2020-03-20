@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+html, body {
+	@apply text-gray-900;
+	@apply w-full;
+	@apply h-full;
+}
+
+.layout {
+	@apply flex;
+	@apply flex-col;
+	@apply items-stretch;
+	@apply min-h-full;
+}
+
+.layout > header {
+	@apply flex-shrink-0;
+}
+
+.layout > main {
+	@apply flex-grow;
+	@apply flex-shrink-0;
+}
+
+.layout > footer {
+	@apply flex-none;
+	@apply flex-shrink-0;
+}
+
+@tailwind utilities;

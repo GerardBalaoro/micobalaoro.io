@@ -1,0 +1,14 @@
+{
+  "social": [
+    {
+      "name": "Facebook",
+      "icon": ["fab", "facebook"],
+      "link": "https://www.facebook.com/pauljustin"
+    },
+    {
+      "name": "Email",
+      "icon": ["fas", "envelope"],
+      "link": "mailto:micobalaoro@gmail.com"
+    }
+  ]
+}

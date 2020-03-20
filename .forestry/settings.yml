@@ -4,16 +4,31 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: 
 sections:
-- type: document
-  path: src/data/site/main.json
-  label: Site
+- type: directory
+  path: src/data/article
+  label: Articles
+  create: all
+  match: "**/*.md"
 - type: directory
   path: src/data/blog
-  label: Blog
+  label: Posts
   create: documents
   match: "**/*.md"
   templates:
   - blog-post
+- type: heading
+  label: Site Settings
+- type: document
+  path: src/data/site/main.json
+  label: Information
+- type: document
+  path: src/data/site/navigation.json
+  label: Navigation
+  match: "**/*"
+- type: document
+  path: src/data/site/social.json
+  label: Social Links
+  match: "**/*"
 upload_dir: src/data/blog/images
 public_path: "/uploads"
 front_matter_path: ''

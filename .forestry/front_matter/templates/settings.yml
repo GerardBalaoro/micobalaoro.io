@@ -1,0 +1,13 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: text
+  name: siteName
+  label: siteName
+- type: text
+  name: siteDescription
+  label: siteDescription
+- type: text
+  name: author
+  label: author

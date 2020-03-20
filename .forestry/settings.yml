@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: 
 sections:
+- type: document
+  path: src/data/site/main.js
+  label: Site
+  match: "**/*"
 - type: directory
   path: src/data/blog
   label: Blog

@@ -1,13 +1,15 @@
 ---
-label: Settings
+label: Site Metadata
 hide_body: true
 fields:
 - type: text
   name: siteName
-  label: siteName
+  label: Site Name
 - type: text
   name: siteDescription
-  label: siteDescription
+  label: Site Description
+  description: Tagline or description of your site
 - type: text
   name: author
-  label: author
+  label: Author
+  description: Owner of your site

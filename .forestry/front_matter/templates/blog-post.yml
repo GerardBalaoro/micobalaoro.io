@@ -4,7 +4,8 @@ hide_body: false
 fields:
 - type: number
   name: id
-  label: id
+  label: ID
+  description: Unique ID of the post
 - type: text
   name: title
   label: Title

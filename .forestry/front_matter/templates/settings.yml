@@ -13,3 +13,5 @@ fields:
   name: author
   label: Author
   description: Owner of your site
+pages:
+- src/data/site/main.json

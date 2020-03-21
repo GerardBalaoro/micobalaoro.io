@@ -13,3 +13,5 @@ fields:
     name: link
     label: Destination
   description: Displayed in the header menu
+pages:
+- src/data/site/navigation.json

@@ -7,7 +7,7 @@
 				<div
 					class="flex justify-between items-center flex-wrap text-gray-400 mb-2"
 				>
-					<NavMenu />
+					<NavMenu/>
 					<SocialMenu className="hidden lg:flex mx-auto lg:mx-0" />
 				</div>
 				<div class="text-center mb-5 mt-12 flex flex-col">
@@ -34,39 +34,39 @@
 
 <static-query>
 query {
-  metadata {
-	siteName,
-	siteDescription
-  }
+	metadata {
+		siteName,
+		siteDescription
+	}
 }
 </static-query>
 
 <script>
-import NavMenu from '~/partials/NavMenu.vue';
-import SocialMenu from '~/partials/SocialMenu.vue';
-import SiteName from '~/partials/SiteName.vue';
-import SiteFooter from '~/partials/SiteFooter.vue';
-import Logo from '~/partials/Logo.vue';
+import NavMenu from '~/layouts/partials/NavMenu.vue'
+import SocialMenu from '~/layouts/partials/SocialMenu.vue'
+import SiteName from '~/layouts/partials/SiteName.vue'
+import SiteFooter from '~/layouts/partials/SiteFooter.vue'
+import Logo from '~/layouts/partials/Logo.vue'
 
 export default {
 	metaInfo() {
 		return {
-			titleTemplate: `${this.$static.metadata.siteName} - ${this.$static.metadata.siteDescription}`
-		};
+			titleTemplate: `${this.$static.metadata.siteName} - ${this.$static.metadata.siteDescription}`,
+		}
 	},
 	components: {
 		NavMenu,
 		SocialMenu,
 		SiteName,
 		SiteFooter,
-		Logo
+		Logo,
 	},
 	data() {
 		return {
-			navigation: ['Home', 'Posts', 'Categories', 'About']
-		};
-	}
-};
+			navigation: ['Home', 'Posts', 'Categories', 'About'],
+		}
+	},
+}
 </script>
 
 <style scoped>

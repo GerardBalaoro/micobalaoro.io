@@ -9,17 +9,17 @@
 						to="/"
 						class="flex text-white font-semibold items-center text-lg"
 					>
-						<Logo className="w-10 pr-3"/>
-						<SiteName className="hidden md:inline"/>
+						<Logo className="w-10 pr-3" />
+						<SiteName className="hidden md:inline" />
 					</g-link>
-					<NavMenu/>
+					<NavMenu />
 				</div>
 			</div>
 		</header>
 		<main class="pb-20">
-			<slot/>
+			<slot />
 		</main>
-		<SiteFooter class="w-full"/>
+		<SiteFooter class="w-full" />
 	</div>
 </template>
 
@@ -32,24 +32,24 @@ query {
 </static-query>
 
 <script>
-import NavMenu from '~/partials/NavMenu.vue';
-import SiteName from '~/partials/SiteName.vue';
-import SiteFooter from '~/partials/SiteFooter.vue';
-import Logo from '~/partials/Logo.vue'
+import NavMenu from '~/layouts/partials/NavMenu.vue'
+import SiteName from '~/layouts/partials/SiteName.vue'
+import SiteFooter from '~/layouts/partials/SiteFooter.vue'
+import Logo from '~/layouts/partials/Logo.vue'
 
 export default {
 	components: {
 		NavMenu,
 		SiteName,
 		SiteFooter,
-		Logo
+		Logo,
 	},
 	data() {
 		return {
-			navigation: ['Home', 'Posts', 'Categories', 'About']
-		};
-	}
-};
+			navigation: ['Home', 'Posts', 'Categories', 'About'],
+		}
+	},
+}
 </script>
 
 <style>

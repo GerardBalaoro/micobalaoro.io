@@ -1,12 +1,14 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
 	theme: {
 		fontFamily: {
-			sans: ['Inter', ...defaultTheme.fontFamily.sans]
+			sans: ['Inter', ...defaultTheme.fontFamily.sans],
 		},
 		extend: {
 			spacing: {
+				'68': '18.75rem',
+				'99': '26rem',
 				'1/2': '50%',
 				'1/3': '33.333333%',
 				'2/3': '66.666667%',
@@ -35,9 +37,17 @@ module.exports = {
 				'11/12': '91.666667%',
 				full: '100%',
 				screen: '100vw',
-			}
+				'3/2': '150%',
+				'2x': '200%',
+				'3x': '300%'
+			},
 		},
 	},
-	variants: {},
+	variants: {
+		cursor: ['responsive', 'hover'],
+		borderWidth: ['responsive', 'hover', 'focus'],
+		borderStyle: ['responsive', 'hover', 'focus'],
+		backgroundColor: ['responsive', 'hover', 'active', 'focus', 'group-hover']
+	},
 	plugins: [],
-};
+}

@@ -29,14 +29,14 @@ query Article($id: ID!) {
 </page-query>
 
 <script>
-import '~/assets/css/markdown.css';
+import '~/assets/css/markdown.css'
 
 export default {
 	metaInfo() {
 		return {
 			title: this.$page.article.title,
-			meta: [{ name: 'author', content: this.$page.metadata.author }]
-		};
-	}
-};
+			meta: [{ name: 'author', content: this.$page.metadata.author }],
+		}
+	},
+}
 </script>

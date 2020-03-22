@@ -46,15 +46,15 @@
 <script>
 export default {
 	props: {
-		post: { type: Object, required: true }
+		post: { type: Object, required: true },
 	},
 	computed: {
 		excerpt() {
 			return (
 				this.post.content.replace(/(<([^>]+)>)/gi, '').slice(0, 150) +
 				'...'
-			);
-		}
-	}
-};
+			)
+		},
+	},
+}
 </script>

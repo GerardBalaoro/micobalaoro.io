@@ -1,9 +1,8 @@
 module.exports = function (api) {
-	api.loadSource(({ addCollection }) => {
-		// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-	});
-
-	api.createPages(({ createPage }) => {
-		// Use the Pages API here: https://gridsome.org/docs/pages-api/
-	});
-};
+	api.loadSource(async store => {
+		const metadata = require('./src/data/metadata.json');
+		Object.keys(metadata).forEach(key => {
+			store.addMetadata(key, metadata[key]);
+		});
+	})
+}

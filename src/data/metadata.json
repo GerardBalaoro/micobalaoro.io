@@ -1,0 +1,17 @@
+{
+	"siteName": "PJ Balaoro",
+	"siteDescription": "My Personal Website and Blog",
+	"author": "Paul Justin Balaoro",
+	"social": [
+		{
+			"name": "Facebook",
+			"icon": "fab-facebook",
+			"link": "https://www.facebook.com/micobalaoro"
+		},
+		{
+			"name": "Email",
+			"icon": "fas-envelope",
+			"link": "mailto:micobalaoro@gmail.com"
+		}
+	]
+}

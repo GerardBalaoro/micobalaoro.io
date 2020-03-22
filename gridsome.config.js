@@ -2,46 +2,52 @@ module.exports = {
 	siteName: 'PJ Balaoro',
 	plugins: [
 		{
-			use: 'gridsome-source-static-meta',
-			options: {
-				path: 'src/data/site/*.json'
-			}
-		},
-		{
 			use: 'gridsome-plugin-tailwindcss',
 			options: {
-				tailwindConfig: './tailwind.config.js'
+				tailwindConfig: './tailwind.config.js',
 			},
 		},
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
-				path: './src/data/blog/**/*.md',
+				path: './src/data/sketches/*.json',
+				typeName: 'Sketch',
+				refs: {
+					category: {
+						typeName: 'SketchCategory',
+						create: true,
+					},
+				},
+			},
+		},
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: './src/data/posts/**/*.md',
 				typeName: 'Post',
 				refs: {
 					tags: {
 						typeName: 'Tag',
-						create: true
+						create: true,
 					},
 					category: {
 						typeName: 'Category',
-						create: true
-					}
-				}
-			}
+						create: true,
+					},
+				},
+			},
 		},
 		{
 			use: '@gridsome/vue-remark',
 			options: {
 				typeName: 'Article',
 				baseDir: './src/data/article',
-				template: './src/templates/Article.vue'
-			}
-		}
+				template: './src/templates/Article.vue',
+			},
+		},
 	],
 	templates: {
 		Post: '/post/:fileInfo__name',
-		// SitePage: '/:id'
 	},
 	chainWebpack: config => {
 		config.module
@@ -49,10 +55,8 @@ module.exports = {
 			.oneOf('normal')
 			.use('postcss-loader')
 			.tap(options => {
-				options.plugins.unshift(...[
-					require('postcss-nested'),
-				])
+				options.plugins.unshift(...[require('postcss-nested')])
 				return options
 			})
 	},
-};
+}

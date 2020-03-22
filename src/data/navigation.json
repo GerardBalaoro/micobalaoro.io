@@ -1,0 +1,20 @@
+{
+	"mainNavigation": [
+		{
+			"name": "Home",
+			"link": "/"
+		},
+		{
+			"name": "Blog",
+			"link": "/blog/"
+		},
+		{
+			"name": "Sketches",
+			"link": "/sketches/"
+		},
+		{
+			"name": "About",
+			"link": "/about/"
+		}
+	]
+}

@@ -32,7 +32,9 @@
 			<div
 				class="py-3 w-full lg:w-1/3 lg:px-2 xl:w-1/4"
 				v-for="post in posts.items"
-				v-show="activeCategory == null || post.category.id == activeCategory"
+				v-show="
+					activeCategory == null || post.category.id == activeCategory
+				"
 				:key="post.id"
 			>
 				<PostCard :post="post" />
@@ -95,9 +97,7 @@ export default {
 	},
 	created() {
 		this.posts = collect(this.$page.allPost.edges.map(e => e.node))
-		this.categories = collect(
-			this.$page.allCategory.edges.map(e => e.node)
-		)
+		this.categories = collect(this.$page.allCategory.edges.map(e => e.node))
 	},
 }
 </script>

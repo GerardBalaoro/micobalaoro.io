@@ -8,8 +8,16 @@
 			<div class="flex flex-col px-5 m-auto w-5/6 md:w-2/3 lg:w-1/4">
 				<g-image :src="lightBoxImage" class="shadow-lg" />
 				<div class="flex justify-center pt-3">
-					<button class="w-6 md:w-8 h-auto focus:outline-none focus:shadow-outline rounded-full" title="Close" @click="hideLightBox">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="text-white fill-current opacity-75">
+					<button
+						class="w-6 md:w-8 h-auto focus:outline-none focus:shadow-outline rounded-full"
+						title="Close"
+						@click="hideLightBox"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 20 20"
+							class="text-white fill-current opacity-75"
+						>
 							<defs />
 							<path
 								d="M2.93 17.07A10 10 0 1117.07 2.93 10 10 0 012.93 17.07zM11.4 10l2.83-2.83-1.41-1.41L10 8.59 7.17 5.76 5.76 7.17 8.59 10l-2.83 2.83 1.41 1.41L10 11.41l2.83 2.83 1.41-1.41L11.41 10z"
@@ -137,12 +145,12 @@ export default {
 			return inflector.camel2words(string.replace(/-/g, ' '))
 		},
 		showLightBox(image) {
-			this.lightBoxImage = image;
-			this.lightBoxActive = true;
+			this.lightBoxImage = image
+			this.lightBoxActive = true
 		},
 		hideLightBox() {
-			this.lightBoxActive = false;
-		}
+			this.lightBoxActive = false
+		},
 	},
 	created() {
 		this.sketches = collect(this.$page.allSketch.edges.map(e => e.node))

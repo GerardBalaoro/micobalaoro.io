@@ -14,7 +14,7 @@
 						<Logo className="w-10 pr-3" />
 						<SiteName className="hidden md:inline" />
 					</g-link>
-					<NavMenu class="self-end xs:mx-0"/>
+					<NavMenu class="self-end xs:mx-0" />
 				</div>
 				<div class="text-center mb-5 mt-12 flex flex-col">
 					<div
@@ -56,7 +56,7 @@ export default {
 	},
 	metaInfo() {
 		return {
-			title: this.title
+			title: this.title,
 		}
 	},
 	props: {

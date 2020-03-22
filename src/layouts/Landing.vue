@@ -7,7 +7,7 @@
 				<div
 					class="flex justify-between items-center flex-wrap text-gray-400 mb-2"
 				>
-					<NavMenu/>
+					<NavMenu />
 					<SocialMenu className="hidden lg:flex mx-auto lg:mx-0" />
 				</div>
 				<div class="text-center mb-5 mt-12 flex flex-col">

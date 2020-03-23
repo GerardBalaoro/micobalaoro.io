@@ -7,9 +7,6 @@ fields:
   label: Title
   config:
     required: true
-- type: file
-  name: image
-  label: Image
 - name: category
   type: select
   default: ''
@@ -22,3 +19,6 @@ fields:
       file: 
       path: 
   label: Category
+- type: file
+  name: image
+  label: Image

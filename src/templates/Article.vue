@@ -1,19 +1,13 @@
 <template>
-	<Layout>
-		<div class="px-5 py-3 my-3">
-			<article class="post">
-				<div class="lg:w-4/6 xl:w-1/2 mx-auto">
-					<h1 class="text-3xl lg:text-4xl font-semibold">
-						{{ $page.article.title }}
-					</h1>
-					<hr class="border border-gray-300 border-1 mt-8 mb-5" />
-				</div>
-				<VueRemarkContent
-					class="content text-gray-900 lg:w-4/6 xl:w-1/2 xl:max-w-6xl mx-auto"
-				/>
+	<BannerLayout :title="$page.article.title">
+		<div
+			class="p-5 w-full lg:px-0 md:w-3/4 md:leading-loose xl:max-w-6xl mx-auto mt-10 flex flex-wrap items-stretch justify-center"
+		>
+			<article class="post mx-auto">
+				<div class="content" v-html="$page.article.content"></div>
 			</article>
 		</div>
-	</Layout>
+	</BannerLayout>
 </template>
 
 <page-query>
@@ -29,9 +23,13 @@ query Article($id: ID!) {
 </page-query>
 
 <script>
+import BannerLayout from '~/layouts/Banner.vue'
 import '~/assets/css/markdown.css'
 
 export default {
+	components: {
+		BannerLayout,
+	},
 	metaInfo() {
 		return {
 			title: this.$page.article.title,

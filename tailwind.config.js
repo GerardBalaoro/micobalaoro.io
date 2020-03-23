@@ -39,7 +39,7 @@ module.exports = {
 				screen: '100vw',
 				'3/2': '150%',
 				'2x': '200%',
-				'3x': '300%'
+				'3x': '300%',
 			},
 		},
 	},
@@ -47,7 +47,13 @@ module.exports = {
 		cursor: ['responsive', 'hover'],
 		borderWidth: ['responsive', 'hover', 'focus'],
 		borderStyle: ['responsive', 'hover', 'focus'],
-		backgroundColor: ['responsive', 'hover', 'active', 'focus', 'group-hover']
+		backgroundColor: [
+			'responsive',
+			'hover',
+			'active',
+			'focus',
+			'group-hover',
+		],
 	},
 	plugins: [],
 }

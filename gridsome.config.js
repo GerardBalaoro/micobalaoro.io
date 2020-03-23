@@ -23,8 +23,10 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
-				path: './src/data/posts/**/*.md',
 				typeName: 'Post',
+				baseDir: './src/data/posts',
+				path: '*.md',
+				pathPrefix: '/post',
 				refs: {
 					tags: {
 						typeName: 'Tag',
@@ -38,16 +40,17 @@ module.exports = {
 			},
 		},
 		{
-			use: '@gridsome/vue-remark',
+			use: '@gridsome/source-filesystem',
 			options: {
 				typeName: 'Article',
-				baseDir: './src/data/article',
-				template: './src/templates/Article.vue',
+				baseDir: './src/data/articles',
+				path: '**/*.md',
+				pathPrefix: '/',
 			},
 		},
 	],
-	templates: {
-		Post: '/post/:fileInfo__name',
+	transformers: {
+		remark: {},
 	},
 	chainWebpack: config => {
 		config.module

@@ -5,7 +5,8 @@
 		"build": "gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
-		"dev": "gridsome develop"
+		"prettier:check": "prettier --check --ignore-path=.gitignore \"./**/*.{js,json,css,vue,yml}\"",
+		"prettier:fix": "prettier --write --ignore-path=.gitignore \"./**/*.{js,json,css,vue,yml}\""
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -15,13 +16,10 @@
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-json": "^0.2.1",
 		"@gridsome/transformer-remark": "^0.5.0",
-		"@gridsome/vue-remark": "^0.1.10",
 		"collect.js": "^4.20.3",
 		"gridsome": "^0.7.0",
 		"gridsome-plugin-tailwindcss": "^2.2.43",
-		"inflector-js": "^1.0.1"
-	},
-	"devDependencies": {
+		"inflector-js": "^1.0.1",
 		"postcss-loader": "^3.0.0",
 		"postcss-nested": "^4.2.1"
 	},

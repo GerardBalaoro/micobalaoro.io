@@ -7,8 +7,8 @@
 				<div
 					class="flex justify-between items-center flex-wrap text-gray-400 mb-2"
 				>
-					<NavMenu />
-					<SocialMenu className="hidden lg:flex mx-auto lg:mx-0" />
+					<NavMenu class="mx-auto md:mx-0" />
+					<SocialMenu class="hidden md:flex mx-auto md:mx-0" />
 				</div>
 				<div class="text-center mb-5 mt-12 flex flex-col">
 					<div class="mx-auto">
@@ -51,7 +51,9 @@ import Logo from '~/layouts/partials/Logo.vue'
 export default {
 	metaInfo() {
 		return {
-			titleTemplate: `${this.$static.metadata.siteName} - ${this.$static.metadata.siteDescription}`,
+			titleTemplate: `${this.$static.metadata.siteName} - ${
+				this.$static.metadata.siteDescription
+			}`,
 		}
 	},
 	components: {

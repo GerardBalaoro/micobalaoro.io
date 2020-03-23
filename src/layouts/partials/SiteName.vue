@@ -1,5 +1,5 @@
 <template>
-	<span :class="'font-light ' + className">
+	<span class="font-light">
 		<span
 			v-for="(name, i) in siteName"
 			:key="i"

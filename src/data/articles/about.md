@@ -1,6 +1,7 @@
 ---
 title: About Me
 ---
+
 I am **Paul Justin M. Balaoro**, an undergraduate student of BS Architecture in the Polytechnic University of the Philippines.
 
 ## Précis of my perspective

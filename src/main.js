@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import inflector from 'inflector-js'
 import '~/assets/fonts/inter.css'
 import '~/assets/css/main.css'
 
@@ -14,4 +15,12 @@ library.add(faFacebook, faEnvelope, faPaperPlane)
 export default function(Vue, { router, head, isClient }) {
 	Vue.component('Layout', DefaultLayout)
 	Vue.component('fa', FontAwesomeIcon)
+
+	Vue.mixin({
+		methods: {
+			titleCase(string) {
+				return inflector.camel2words(string.replace(/-/g, ' '))
+			},
+		},
+	})
 }

@@ -5,6 +5,18 @@ fields:
 - type: text
   name: title
   label: Title
+- name: category
+  type: select
+  default: ''
+  config:
+    required: true
+    options: []
+    source:
+      type: simple
+      section: posts
+      file: src/data/posts/adhesives-sealants-high-tech-building-materials.md
+      path: 
+  label: Category
 - type: datetime
   name: created
   label: Date Created
@@ -20,15 +32,3 @@ fields:
 - type: number
   name: id
   label: ID
-- name: category
-  type: select
-  default: ''
-  config:
-    required: true
-    options: []
-    source:
-      type: simple
-      section: posts
-      file: src/data/posts/adhesives-sealants-high-tech-building-materials.md
-      path: 
-  label: Category

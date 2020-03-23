@@ -4,10 +4,21 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: file
   name: image
-  label: image
-- type: text
-  name: category
-  label: category
+  label: Image
+- name: category
+  type: select
+  default: ''
+  config:
+    required: true
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category

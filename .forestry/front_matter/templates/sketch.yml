@@ -8,17 +8,11 @@ fields:
   config:
     required: true
 - name: category
-  type: select
-  default: ''
+  type: text
   config:
     required: true
-    options: []
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Category
+  description: Lower case wih words separated by hypen (e.g. sample-category)
 - type: file
   name: image
   label: Image

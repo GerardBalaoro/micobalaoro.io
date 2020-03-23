@@ -5,11 +5,11 @@
 		v-if="shown && image"
 	>
 		<div class="flex flex-col px-5 m-auto w-5/6 md:w-2/3 lg:w-1/3 xl:w-1/4">
-			<span class="text-white text-center pb-3 font-semibold">{{
+			<div class="text-white mx-auto pb-3 font-semibold">{{
 				title
-			}}</span>
-			<g-image :src="image" class="shadow-lg" />
-			<div class="flex justify-center pt-3">
+			}}</div>
+			<g-image :src="image" class="shadow-lg mx-auto" />
+			<div class="flex justify-center pt-3 mx-auto">
 				<button
 					class="w-6 md:w-8 h-auto focus:outline-none focus:shadow-outline rounded-full"
 					title="Close"

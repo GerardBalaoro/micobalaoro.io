@@ -1,5 +1,5 @@
 <template>
-	<ul :class="'text-gray-400 flex items-center' + className">
+	<ul class="text-gray-400 flex items-center">
 		<li
 			class="px-2 py-1"
 			v-for="(social, i) in $static.metadata.social"
@@ -11,7 +11,7 @@
 				target="_blank"
 				class="hover:text-gray-100"
 			>
-				<fa :icon="social.icon.split('-')" />
+				<fa :icon="social.icon.split('-')" class="w-4" />
 			</a>
 		</li>
 	</ul>
@@ -26,11 +26,3 @@ query {
     }
 }
 </static-query>
-
-<script>
-export default {
-	props: {
-		className: { type: String, required: false },
-	},
-}
-</script>

@@ -23,17 +23,15 @@ sections:
   label: Sketches
   create: documents
   match: "*.json"
-  new_doc_ext: ".json"
+  new_doc_ext: json
 - type: heading
   label: Site Settings
 - type: document
   path: src/data/metadata.json
   label: Metadata
-  match: "**/*"
 - type: document
   path: src/data/navigation.json
   label: Navigation
-  match: "**/*"
 upload_dir: src/data/images
 public_path: "/uploads"
 front_matter_path: ''

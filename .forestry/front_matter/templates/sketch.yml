@@ -1,0 +1,13 @@
+---
+label: Sketch
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: image
+  label: image
+- type: text
+  name: category
+  label: category

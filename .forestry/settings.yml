@@ -24,6 +24,8 @@ sections:
   create: documents
   match: "*.json"
   new_doc_ext: json
+  templates:
+  - sketch
 - type: heading
   label: Site Settings
 - type: document

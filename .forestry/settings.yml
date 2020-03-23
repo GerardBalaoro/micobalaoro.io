@@ -2,31 +2,47 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url:
+webhook_url: 
 sections:
-    - type: directory
-      path: src/data/article
-      label: Articles
-      create: all
-      match: '**/*.md'
-      templates:
-          - article
-    - type: directory
-      path: src/data/posts
-      label: Posts
-      create: documents
-      match: '**/*.md'
-      templates:
-          - post
+- type: directory
+  path: src/data/articles
+  label: Articles
+  create: all
+  match: "**/*.md"
+  templates:
+  - article
+- type: directory
+  path: src/data/posts
+  label: Posts
+  create: documents
+  match: "*.md"
+  templates:
+  - post
+- type: directory
+  path: src/data/sketches
+  label: Sketches
+  create: documents
+  match: "*.json"
+  new_doc_ext: ".json"
+- type: heading
+  label: Site Settings
+- type: document
+  path: src/data/metadata.json
+  label: Metadata
+  match: "**/*"
+- type: document
+  path: src/data/navigation.json
+  label: Navigation
+  match: "**/*"
 upload_dir: src/data/images
-public_path: '/uploads'
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
 build:
-    preview_output_directory: dist
-    install_dependencies_command: npm install
-    preview_docker_image: node:10
-    mount_path: '/srv'
-    working_dir: '/srv'
-    instant_preview_command: npm run develop
+  preview_output_directory: dist
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run develop

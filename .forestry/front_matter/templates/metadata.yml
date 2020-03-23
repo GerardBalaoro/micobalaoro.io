@@ -1,0 +1,26 @@
+---
+label: Metadata
+hide_body: true
+fields:
+- type: text
+  name: siteName
+  label: siteName
+- type: text
+  name: siteDescription
+  label: siteDescription
+- type: text
+  name: author
+  label: author
+- type: field_group_list
+  name: social
+  label: social
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: icon
+    label: icon
+  - type: text
+    name: link
+    label: link

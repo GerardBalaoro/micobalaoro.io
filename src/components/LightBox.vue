@@ -45,20 +45,12 @@ export default {
 			this.image = image
 			this.title = title
 			this.shown = true
-			document.querySelector('.layout').classList.add('lightbox-shown')
 		},
 		hide() {
 			this.shown = false
 			this.title = null
 			this.image = null
-			document.querySelector('.layout').classList.remove('lightbox-shown')
 		},
 	},
 }
 </script>
-
-<style lang="postcss">
-.layout.lightbox-shown {
-	@apply fixed overflow-hidden h-screen;
-}
-</style>

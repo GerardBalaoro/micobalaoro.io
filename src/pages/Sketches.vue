@@ -95,9 +95,6 @@ export default {
 		}
 	},
 	methods: {
-		titleCase(string) {
-			return inflector.camel2words(string.replace(/-/g, ' '))
-		},
 		showLightBox(sketch) {
 			this.$refs.lightbox.show(
 				sketch.image,

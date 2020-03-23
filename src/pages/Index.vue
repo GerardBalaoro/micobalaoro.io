@@ -41,7 +41,10 @@
 					v-for="sketch in sketches"
 					:key="sketch.id"
 				>
-					<SketchCard :sketch="sketch" />
+					<SketchCard
+						:sketch="sketch"
+						@image-clicked="showLightBox(sketch)"
+					/>
 				</div>
 				<div
 					class="w-full flex mt-6"
@@ -125,8 +128,11 @@ export default {
 		this.featured = this.posts.first()
 	},
 	methods: {
-		showLightBox(image) {
-			this.$refs.lightbox.show(image)
+		showLightBox(sketch) {
+			this.$refs.lightbox.show(
+				sketch.image,
+				`${this.titleCase(sketch.category.title)}: ${sketch.title}`
+			)
 		},
 	},
 }

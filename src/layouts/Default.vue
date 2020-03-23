@@ -10,7 +10,7 @@
 						class="flex text-white font-semibold items-center text-lg"
 					>
 						<Logo className="w-10 pr-3" />
-						<SiteName className="hidden md:inline" />
+						<SiteName class="hidden md:inline" />
 					</g-link>
 					<NavMenu />
 				</div>

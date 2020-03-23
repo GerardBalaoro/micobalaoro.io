@@ -15,7 +15,7 @@
 						<Logo className="w-12 lg:w-16 pr-3" />
 					</div>
 					<SiteName
-						className="block text-3xl lg:text-5xl tracking-widest"
+						class="block text-3xl lg:text-5xl tracking-widest"
 					/>
 					<div
 						class="font-light text-normal lg:text-lg lowercase tracking-wide text-gray-300"

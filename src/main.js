@@ -7,6 +7,7 @@ import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import inflector from 'inflector-js'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import '~/assets/fonts/inter.css'
 import '~/assets/css/main.css'
 

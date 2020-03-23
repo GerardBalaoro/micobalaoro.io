@@ -2,26 +2,26 @@
 label: Metadata
 hide_body: true
 fields:
-- type: text
-  name: siteName
-  label: Site Name
-- type: text
-  name: siteDescription
-  label: Site Description
-- type: text
-  name: author
-  label: Owner
-- type: field_group_list
-  name: social
-  label: Social Links
-  fields:
-  - type: text
-    name: name
-    label: Name
-  - type: text
-    name: icon
-    label: Icon
-    description: Font Awesome Icon
-  - type: text
-    name: link
-    label: Link
+    - type: text
+      name: siteName
+      label: Site Name
+    - type: text
+      name: siteDescription
+      label: Site Description
+    - type: text
+      name: author
+      label: Owner
+    - type: field_group_list
+      name: social
+      label: Social Links
+      fields:
+          - type: text
+            name: name
+            label: Name
+          - type: text
+            name: icon
+            label: Icon
+            description: Font Awesome Icon
+          - type: text
+            name: link
+            label: Link

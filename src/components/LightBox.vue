@@ -5,9 +5,7 @@
 		v-if="shown && image"
 	>
 		<div class="flex flex-col px-5 m-auto w-5/6 md:w-2/3 lg:w-1/3 xl:w-1/4">
-			<div class="text-white mx-auto pb-3 font-semibold">{{
-				title
-			}}</div>
+			<div class="text-white mx-auto pb-3 font-semibold">{{ title }}</div>
 			<g-image :src="image" class="shadow-lg mx-auto" />
 			<div class="flex justify-center pt-3 mx-auto">
 				<button

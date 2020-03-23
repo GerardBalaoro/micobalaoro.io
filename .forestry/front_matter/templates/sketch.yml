@@ -2,17 +2,17 @@
 label: Sketch
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
-- name: category
-  type: text
-  config:
-    required: true
-  label: Category
-  description: Lower case wih words separated by hypen (e.g. sample-category)
-- type: file
-  name: image
-  label: Image
+    - type: text
+      name: title
+      label: Title
+      config:
+          required: true
+    - name: category
+      type: text
+      config:
+          required: true
+      label: Category
+      description: Lower case wih words separated by hypen (e.g. sample-category)
+    - type: file
+      name: image
+      label: Image

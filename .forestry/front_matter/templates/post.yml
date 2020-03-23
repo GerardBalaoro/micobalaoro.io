@@ -2,34 +2,34 @@
 label: Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
-- name: category
-  type: text
-  config:
-    required: true
-  label: Category
-  description: Lower case wih words separated by hypen (e.g. sample-category)
-  default: blog
-- type: datetime
-  name: created
-  label: Date Created
-  config:
-    date_format: YYYY-MM-DD
-    required: true
-  default: now
-- type: file
-  name: image
-  label: Featured Image
-- type: list
-  name: tags
-  label: Tags
-- type: number
-  name: id
-  label: ID
-  config:
-    required: true
-  description: Used to order the post
+    - type: text
+      name: title
+      label: Title
+      config:
+          required: true
+    - name: category
+      type: text
+      config:
+          required: true
+      label: Category
+      description: Lower case wih words separated by hypen (e.g. sample-category)
+      default: blog
+    - type: datetime
+      name: created
+      label: Date Created
+      config:
+          date_format: YYYY-MM-DD
+          required: true
+      default: now
+    - type: file
+      name: image
+      label: Featured Image
+    - type: list
+      name: tags
+      label: Tags
+    - type: number
+      name: id
+      label: ID
+      config:
+          required: true
+      description: Used to order the post

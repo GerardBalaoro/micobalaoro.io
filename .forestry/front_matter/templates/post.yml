@@ -5,23 +5,21 @@ fields:
 - type: text
   name: title
   label: Title
-- name: category
-  type: select
-  default: ''
   config:
     required: true
-    options: []
-    source:
-      type: simple
-      section: posts
-      file: src/data/posts/adhesives-sealants-high-tech-building-materials.md
-      path: 
+- name: category
+  type: text
+  config:
+    required: true
   label: Category
+  description: Lower case wih words separated by hypen (e.g. sample-category)
+  default: blog
 - type: datetime
   name: created
   label: Date Created
   config:
     date_format: YYYY-MM-DD
+    required: true
   default: now
 - type: file
   name: image
@@ -32,3 +30,6 @@ fields:
 - type: number
   name: id
   label: ID
+  config:
+    required: true
+  description: Used to order the post

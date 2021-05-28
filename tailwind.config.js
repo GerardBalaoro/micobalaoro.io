@@ -1,6 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+	purge: [
+		'./src/**/*.vue'
+	],
 	theme: {
 		fontFamily: {
 			sans: ['Inter', ...defaultTheme.fontFamily.sans],

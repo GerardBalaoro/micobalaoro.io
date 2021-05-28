@@ -21,7 +21,7 @@
 		"gridsome-plugin-tailwindcss": "^2.2.43",
 		"inflector-js": "^1.0.1",
 		"postcss-loader": "^3.0.0",
-		"postcss-nested": "^4.2.1"
+		"postcss-nested": "^4.2.3"
 	},
 	"prettier": {
 		"trailingComma": "es5",

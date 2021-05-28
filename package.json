@@ -18,7 +18,7 @@
 		"@gridsome/transformer-remark": "^0.6.4",
 		"collect.js": "^4.20.3",
 		"gridsome": "^0.7.23",
-		"gridsome-plugin-tailwindcss": "^2.2.43",
+		"gridsome-plugin-tailwindcss": "^3.0.1",
 		"inflector-js": "^1.0.1",
 		"postcss-loader": "^3.0.0",
 		"postcss-nested": "^4.2.3"

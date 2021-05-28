@@ -111,7 +111,7 @@ li.category {
 	}
 
 	&.selected {
-		@apply bg-blue-500 text-white border-none shadow-xs;
+		@apply bg-blue-500 text-white border-none shadow;
 	}
 }
 </style>

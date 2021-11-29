@@ -2551,10 +2551,10 @@ collapse-white-space@^1.0.0, collapse-white-space@^1.0.2:
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.6.tgz#e63629c0016665792060dbbeb79c42239d2c5287"
   integrity sha512-jEovNnrhMuqyCcjfEJA56v0Xq8SkIoPKDyaHahwo3POf4qcSXqMYuwNcOTzp74vTsR9Tn08z4MxWqAhcekogkQ==
 
-collect.js@^4.20.3:
-  version "4.28.6"
-  resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.28.6.tgz#7fb75ae93b8198f7bb88461e263ea09744d0c56b"
-  integrity sha512-NAyuk1DnCotRaDZIS5kJ4sptgkwOeYqElird10yziN5JBuwYOGkOTguhNcPn5g344IfylZecxNYZAVXgv19p5Q==
+collect.js@^4.29.3:
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.29.3.tgz#4d8aeb2970d0d12f6bc0923c9a2a172d51ec25f8"
+  integrity sha512-/6idZ7r3B25Q4cForbiHJ7+aqupcgMEtrKRn9D3viCbLw+YuNFjd23HwDH89Y2cU4jlhkwksD80nZFKtNE25Gw==
 
 collection-visit@^1.0.0:
   version "1.0.0"

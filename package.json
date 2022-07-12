@@ -12,7 +12,7 @@
 		"@fortawesome/fontawesome-svg-core": "^1.2.36",
 		"@fortawesome/free-brands-svg-icons": "^6.1.1",
 		"@fortawesome/free-solid-svg-icons": "^6.1.1",
-		"@fortawesome/vue-fontawesome": "^2.0.2",
+		"@fortawesome/vue-fontawesome": "^2.0.8",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-json": "^0.2.1",
 		"@gridsome/transformer-remark": "^0.6.4",
